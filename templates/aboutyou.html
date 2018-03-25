@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <title>Learning About Flask</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for("static",
+filename="css/hello.css") }}">
+</head>
+
+<body>
+
+  <p>Let's keep in touch!</p>
+
+    <div id="about-user">
+      <form method="post" action="/aboutyou">
+        <label for="yourname">Your name:</label>
+        <input type="yourname" id="yourname" name="yourname" required="required">
+        <label for="birthdate">Date of birth:</label>
+        <input type="birthdate" id="birthdate" name="birthdate" required="required">
+        <label for="tellmemore">Tell me more about yourself:</label>
+        <input type="tellmemore" id="tellmemore" name="tellmemore" required="required">
+        <input type="submit" value="Submit" id="submit-button">
+      </form>
+    </div>
+
+</body>
+
+</html>
